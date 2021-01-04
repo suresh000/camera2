@@ -583,6 +583,7 @@ public abstract class CameraVideoFragment extends BaseFragment {
         mMediaRecorder.setOutputFile(mCurrentFile.getAbsolutePath());
         //CamcorderProfile profile = CamcorderProfile.get(CamcorderProfile.QUALITY_480P);
         CamcorderProfile profile = CamcorderProfile.get(CamcorderProfile.QUALITY_CIF);
+        //CamcorderProfile profile = CamcorderProfile.get(CamcorderProfile.QUALITY_QCIF);
         //mMediaRecorder.setVideoFrameRate(profile.videoFrameRate);
         mMediaRecorder.setVideoFrameRate(profile.videoFrameRate);
         mMediaRecorder.setVideoSize(profile.videoFrameWidth, profile.videoFrameHeight);
