@@ -42,6 +42,7 @@ import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
+import com.suresh.camera2.AppUtil;
 import com.suresh.camera2.R;
 import com.suresh.camera2.ui.base.BaseFragment;
 
@@ -575,7 +576,7 @@ public abstract class CameraVideoFragment extends BaseFragment {
         /**
          * create video output file
          */
-        mCurrentFile = getOutputMediaFile();
+        mCurrentFile = AppUtil.getOutputMediaFile(AppUtil.VID_CAPTURE);
         /**
          * set output file in media recorder
          */

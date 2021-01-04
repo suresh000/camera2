@@ -96,7 +96,7 @@ public class MainViewModel {
                 firstEntry.setDelta(3000);
             }
         }
-        File file = getOutputMediaFile();
+        File file = AppUtil.getOutputMediaFile(AppUtil.VID_FINAL);
         String filePath = file.getAbsolutePath();
         if (isError) {
             Movie movie = new Movie();
